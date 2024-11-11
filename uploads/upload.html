@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPLOAD</title>
+
+</head>
+<style>
+body{
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.main{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    border: 1px solid black;
+    -webkit-box-shadow: -2px 12px 36px 0px rgba(0,0,0,0.83);
+    -moz-box-shadow: -2px 12px 36px 0px rgba(0,0,0,0.83);
+    box-shadow: -2px 12px 36px 0px rgba(0,0,0,0.83);
+    border-radius: 10px;
+}
+.container div{
+    line-height: 1.5rem;
+}
+
+</style>
+<body>
+<div class="main">
+    <div class="container">
+        <h1>UPLOAD PICTURES</h1>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <div><input type="file" name="fileToUpload" id="fileToUpload"></div>
+        <div><input type="submit" value="Upload File" name="submit"></div>
+        
+    </form>
+    </div>
+    
+</div>
+
+</body>
+
+</html>
