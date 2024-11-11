@@ -35,6 +35,8 @@ if(isset($_POST["submit"])) {
     } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
             echo "The file has been uploaded.";
+            header("Location: index.php");
+            exit();
         } else {
             echo "Sorry, there was an error uploading your file.";
         }
